@@ -1,3 +1,30 @@
+##  SurveyApp
+   A mini application that allows users to take multiple surveys and return some results after some calculations.
+   ![alt text](https://github.com/mmovundl/SurveyApp/blob/master/storage/screenshots/screen1.png)
+   ![alt text](https://github.com/mmovundl/SurveyApp/blob/master/storage/screenshots/screen2.png)
+   ![alt text](https://github.com/mmovundl/SurveyApp/blob/master/storage/screenshots/screen3.png)
+###	Setting Up The Project
+-Instructions on how to settup the project locally
+### Clone GitHub repo for this project locally
+### cd into your project
+### Install Composer Dependencies, run command
+	composer install
+### Run the command below to Install NPM Dependencies
+	npm install
+### Create a copy of your .env file</p>
+	-If the .env already exist in project jump to (c)
+	(a) There is a .env.example which is a template of the .env file that the project expects us to have.
+	(b)In Your Terminal Run "cp .env.example .env" command
+	(c)Edit your environment variables in your .env file
+	   (i) DB_DATABASE="your database name"
+### Migrate the database
+	php artsian:migrate
+### Generate Application Key
+	-In Your Terminal Run "php artisan key:genarate" command
+
+### Finally: Start server
+In Your Terminal Run "php artisan serve" command to start serve(copy the link to your browser: http://127.0.0.1:8000/)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
