@@ -17,16 +17,16 @@ class FormController extends Controller
             'surname'=>'required',
             'contactnumber'=> 'required',
             'date' => 'required',
-            'age' => 'required|min:5|max:120',
+            'age' => 'required|integer|min:5|max:120',
             'food'=>'required|array|min:1',
             'eat_out'=>'required',
             'watch_movies'=> 'required',
             'watch_tv'=>'required',
             'listen_radio'=>'required|integer|min:1|max:5'
         ]);
-
-        if($validator->fails()){
-            return redirect()->back()->with('message','Please Fill Up The Missing fields');
+        //return dd($request);
+       if($validator->fails()){
+            return redirect()->back()->with('message','Invalid Input or Missing Fields');
         }
         //
         //Populate Survey Table
